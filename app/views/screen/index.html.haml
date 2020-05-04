@@ -1,0 +1,67 @@
+.header
+  .header-left
+    .user-name
+      {=
+      = current_user.name
+      }
+  .header-center
+    .logo
+      %a FRONT FOLDER
+  .header-right
+    .logout
+      = link_to "</EDIT>", edit_user_path(current_user)
+.wapper
+  .main
+    .topic
+      .topic-image
+      .topic-content
+        %a htmlとscssで作成したフォーム
+        %p 今までのカリキュラムで作成したフォームをもう1度作成し、hamlとscssの復習を行ました。
+        %p 今現在のフォームは色々なwebサイトを参考にして作成しましたが、まだまだ改良していきます。
+    .articles
+      .article-box
+        .image
+          =link_to image_tag("https://cdn.pixabay.com/photo/2014/05/03/01/03/macbook-336704_1280.jpg", class:"image"), example1_index_path
+        .title
+          %a PRACTICE
+        .comment
+          %a アプリケーションのマークアップの練習
+      .article-box
+        .image
+          =link_to image_tag("https://cdn.pixabay.com/photo/2018/03/13/11/26/time-3222267_1280.jpg", class:"image"), example2_index_path
+        .title
+          %a CHAT-SPACE風
+        .comment
+          %a header,L-content,R-contentの３つに分けて作成
+      .article-box
+        .image
+          =link_to image_tag("https://cdn.pixabay.com/photo/2015/06/24/16/36/home-820389_1280.jpg", class:"image"), root_path
+        .title
+          %a ダミー
+        .comment
+          %a ダミー
+      .article-box
+        .image
+          =link_to image_tag("https://cdn.pixabay.com/photo/2017/03/24/07/01/computer-2170392_1280.jpg", class:"image"), root_path
+        .title
+          %a ダミー
+        .comment
+          %a ダミー
+      .article-box
+        .image
+          =link_to image_tag("https://cdn.pixabay.com/photo/2013/07/18/10/56/packs-163497_1280.jpg", class:"image"), root_path
+        .title
+          %a ダミー
+        .comment
+          %a ダミー
+      .article-box
+        .image
+          =link_to image_tag("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80", class:"image"), root_path
+        .title
+          %a ダミー
+        .comment
+          %a ダミー
+  .sidemenu
+    .recommended
+      %a RECOMMENDED
+.footer
