@@ -1,21 +1,46 @@
-.header1
-  .header1__logo
-    SNS
-  .header1__home1
-    = link_to "HOME", root_path
-    
-.contents
-  .contents__message
-    follow me!!
-  = link_to "https://www.facebook.com/", class: "contents__btn contents__btn--facebook" do
-    = icon('fab', 'facebook-square',  class: "contents__btn--icon")
-    %span<>
-      Facebook
-  = link_to "https://twitter.com/", class: "contents__btn contents__btn--twitter" do
-    = icon('fab', 'twitter', class: "contents__btn--icon")
-    %span<>
-      Twitter
-  = link_to "https://www.instagram.com/", class: "contents__btn contents__btn--instagram" do
-    = icon('fab', 'instagram', class: "contents__btn--icon")
-    %span<>
-      Instagram
+.folder1
+  .folder1__header
+    .folder1__header__box
+      %p.site-title-sub Web designer's portfolio
+      %h.site-title HI, MY NAME IS...
+      %p.site-description Check out some of my works.
+      .folder1__header__box__btn
+        %button.btn1 test
+  .folder1__about
+    %h2.heading ABOUT ME
+    %p.about-text
+      はじめまして。TECH::CAMPでプログラミングの勉強をしています。
+    %vr 現在は卒業し、個人アプリを制作を行なっています。
+    %p.about-text
+      このサイトは「HAML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザインのポートフォリオサイトです。
+    %vr このサンプルのようなサイトを一から作る過程を通して、HTML、CSSの実践的なコーティングノウハウを学んでいます。
+  .folder1__works
+    %h2.heading WORKS
+    .folder1__works__works-wrapper
+      .folder1__works__works-wrapper__work-box
+        =link_to image_tag("https://cdn.pixabay.com/photo/2020/04/13/10/58/book-5037844_1280.jpg"),class:"work-image"
+        %p.work-text
+          一つ目の制作が入ります 
+        %span
+          簡単な説明
+      .folder1__works__works-wrapper__work-box
+        =link_to image_tag("https://cdn.pixabay.com/photo/2020/02/27/18/54/popcorn-4885565_1280.jpg"),class:"work-image"
+        %p.work-text
+          一つ目の制作が入ります 
+        %span
+          簡単な説明
+      .folder1__works__works-wrapper__work-box
+        =link_to image_tag("https://cdn.pixabay.com/photo/2016/01/19/15/48/luggage-1149289_1280.jpg"),class:"work-image"
+        %p.work-text
+          一つ目の制作が入ります 
+        %span
+          簡単な説明
+      .folder1__works__works-wrapper__work-box
+        =link_to image_tag("https://cdn.pixabay.com/photo/2019/04/26/19/44/basketball-court-4158462_1280.jpg"),class:"work-image"
+        %p.work-text
+          一つ目の制作が入ります 
+        %span
+          簡単な説明
+  .folder1__skills
+  .folder1__contact
+  .folder1__footer
